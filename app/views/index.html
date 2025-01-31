@@ -1,0 +1,44 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Index
+    </h1>
+
+    <h3 class="govuk-heading-m">
+     Claimant
+    </h3>
+
+
+    <p class="govuk-body"> <a href="claimant/a/000-dashboard.html" class="govuk-link govuk-link--no-visited-state">Change hearing date (gen app a) </a></p>
+    <p class="govuk-body"> <a href="claimant/b/000-dashboard.html" class="govuk-link govuk-link--no-visited-state">Ask for more time (gen app bpp b) </a></p>
+    <p class="govuk-body"> <a href="claimant/a/010-00-dashboard-before-query.html" class="govuk-link govuk-link--no-visited-state">What is happening with case (raise a query?) </a></p>
+    <p class="govuk-body"> <a href="claimant/a/010-00-dashboard-after-query.html" class="govuk-link govuk-link--no-visited-state">What happens if judgment not paid (raise a query) </a></p>
+
+
+    <h3 class="govuk-heading-m">
+      Defendant
+     </h3>
+
+    <p class="govuk-body"> <a href="" class="govuk-link govuk-link--no-visited-state">Gen app 1 </a></p>
+    <p class="govuk-body"> <a href="" class="govuk-link govuk-link--no-visited-state">Gen app 2 </a></p>
+
+     <!-- I want to section 
+    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+
+    <h1 class="govuk-heading-xl">
+      {{ serviceName }}
+    </h1>
+
+    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+    -->
+  </div>
+</div>
+
+{% endblock %}
