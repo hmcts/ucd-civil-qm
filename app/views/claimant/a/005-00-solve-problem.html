@@ -18,12 +18,12 @@ href: "javascript:window.history.back()"
 
    
 
-    <form class="form" action="/" method="post">
+    <form class="form" action="/solve-problems" method="post">
 
       {% from "govuk/components/radios/macro.njk" import govukRadios %}
 
       {{ govukRadios({
-      name: "sendDocs",
+      name: "solveProblems",
       value: data['get-update'],
       fieldset: {
       legend: {
@@ -35,7 +35,7 @@ href: "javascript:window.history.back()"
       items: [
       {
       value: "01-submit",
-      text: "Submit a response to the defendant"
+      text: "Submit a response"
       },
       {
       value: "02-see",
@@ -45,9 +45,13 @@ href: "javascript:window.history.back()"
         value: "03-view",
         text: "View documents on my account"
         },
+        {
+          value: "04-feedback",
+          text: "Give feedback"
+          },
       {
-        value: "04-feedback",
-        text: "Give feedback"
+        value: "05-something-else",
+        text: "Something else"
         }
       ]
     }) }}

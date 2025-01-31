@@ -16,15 +16,17 @@ href: "javascript:window.history.back()"
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
+    <span class="govuk-caption-l">Send a message</span>
+
     <h1 class="govuk-heading-l">
-      Raise a query
+      Enter message details
     </h1>
     <p class="govuk-body-m">Claim number: 1234 1234 1234 1234 <br> Claim amount: £400</p>
 
     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-    <form class="form" action="/0000-raise-query-cya" method="post">
+    <form class="form" action="0000-raise-query-cya" method="post">
 
 
 
@@ -32,11 +34,11 @@ href: "javascript:window.history.back()"
 
 {{ govukInput({
   label: {
-    text: "Query subject",
+    text: "Message subject",
     classes: "govuk-label--s"
   },
   hint: {
-    text: "The subject should be a summary of your query"
+    text: "The subject should be a summary of your message"
   },
   id: "query-subject",
   name: "query-subject",
@@ -51,11 +53,11 @@ href: "javascript:window.history.back()"
   id: "query-details",
   value: data['query-details'],
   label: {
-    text: "Query detail",
+    text: "Message detail",
     classes: "govuk-label--s"
   },
   hint: {
-    text: "Include as many details as possible so case workers can respond to your query"
+    text: "Include as many details as possible so case workers can respond to your message"
   }
 }) }}
 
@@ -83,7 +85,7 @@ href: "javascript:window.history.back()"
       name: "hearing-related",
       fieldset: {
       legend: {
-      text: "Is the query hearing related?",
+      text: "Is the message hearing related?",
       isPageHeading: true,
       classes: "govuk-fieldset__legend--s"
       }
@@ -106,8 +108,11 @@ href: "javascript:window.history.back()"
 
       <div class="govuk-form-group">
         <label class="govuk-label govuk-label--s" for="file-upload-1">
-          Add document to this query (Optional)
+          Upload documents (optional)
         </label>
+        <div class="govuk-hint">
+          Only upload documents related to your message. <br> To upload documents to progress your claim, use the appropriate upload options.
+        </div>
         <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
       </div>
 
