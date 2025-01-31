@@ -15,10 +15,12 @@ href: "javascript:window.history.back()"
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds-from-desktop">
 
-    <h1 class="govuk-heading-l">
-      Check your answers
-    </h1>
+  
+    <span class="govuk-caption-l">Send a message</span>
 
+    <h1 class="govuk-heading-l">
+      Check message details
+    </h1>
 
     {{ govukSummaryList({
 
@@ -26,7 +28,7 @@ href: "javascript:window.history.back()"
     {
 
     key: {
-    text: "Query subject"
+    text: "Message subject"
     },
     value: {
     text: data['query-subject']
@@ -45,7 +47,7 @@ href: "javascript:window.history.back()"
 
     {
     key: {
-    text: "Query details"
+    text: "Message details"
     },
     value: {
     text: data['query-details']
@@ -64,7 +66,7 @@ href: "javascript:window.history.back()"
 
     {
     key: {
-    text: "Is the query hearing related? "
+    text: "Is the message hearing related? "
     },
     value: {
     text: data['hearing-related']
@@ -83,7 +85,7 @@ href: "javascript:window.history.back()"
 
     {
       key: {
-      text: "Add document to this query "
+      text: "Documents"
       },
       value: {
       text: "No documents uploaded"
@@ -107,15 +109,16 @@ href: "javascript:window.history.back()"
 
   
 
-    <form action="/0000-raise-query-confirmation" method="post" novalidate>
+    <form action="0000-raise-query-confirmation" method="post" novalidate>
 
     
       <div class="govuk-button-group">
         <button type="submit" class="govuk-button" data-module="govuk-button">
-          Submit
+          Send message
         </button>
         <a class="govuk-link" href="000-dashboard.html">Cancel</a>
       </div>
+
 
       
     </form>
