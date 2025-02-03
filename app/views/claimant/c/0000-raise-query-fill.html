@@ -16,51 +16,53 @@ href: "javascript:window.history.back()"
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
+    <span class="govuk-caption-l">Send a message</span>
+
     <h1 class="govuk-heading-l">
-      Raise a query
+      Enter message details
     </h1>
     <p class="govuk-body-m">Claim number: 1234 1234 1234 1234 <br> Claim amount: £400</p>
 
     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-    <form class="form" action="/0000-raise-query-cya" method="post">
+    <form class="form" action="0000-raise-query-cya" method="post">
 
 
 
-       <!-- Query subject -->
+      <!-- Query subject -->
 
-{{ govukInput({
-  label: {
-    text: "Query subject",
-    classes: "govuk-label--s"
-  },
-  hint: {
-    text: "The subject should be a summary of your query"
-  },
-  id: "query-subject",
-  name: "query-subject",
-  value: data['query-subject']
-}) }}
-
-
-   <!-- Query details -->
-
-{{ govukTextarea({
-  name: "query-details",
-  id: "query-details",
-  value: data['query-details'],
-  label: {
-    text: "Query detail",
-    classes: "govuk-label--s"
-  },
-  hint: {
-    text: "Include as many details as possible so case workers can respond to your query"
-  }
-}) }}
+      {{ govukInput({
+      label: {
+      text: "Message subject",
+      classes: "govuk-label--s"
+      },
+      hint: {
+      text: "The subject should be a summary of your message"
+      },
+      id: "query-subject",
+      name: "query-subject",
+      value: "Requesting an urgent update"
+      }) }}
 
 
-   <!-- Hearing related -->
+      <!-- Query details -->
+
+      {{ govukTextarea({
+      name: "query-details",
+      id: "query-details",
+      value: "I made an application 12 days ago but I haven't received any updates. I would like to know what is happening and whether is has been received? Please can you help.",
+      label: {
+      text: "Message detail",
+      classes: "govuk-label--s"
+      },
+      hint: {
+      text: "Include as many details as possible so case workers can respond to your message"
+      }
+      }) }}
+
+
+      <!-- Hearing related -->
 
 
 
@@ -83,7 +85,7 @@ href: "javascript:window.history.back()"
       name: "hearing-related",
       fieldset: {
       legend: {
-      text: "Is the query hearing related?",
+      text: "Is the message hearing related?",
       isPageHeading: true,
       classes: "govuk-fieldset__legend--s"
       }
@@ -98,7 +100,8 @@ href: "javascript:window.history.back()"
       },
       {
       value: "No",
-      text: "No"
+      text: "No",
+      checked: true
       }
       ]
       }) }}
@@ -106,8 +109,12 @@ href: "javascript:window.history.back()"
 
       <div class="govuk-form-group">
         <label class="govuk-label govuk-label--s" for="file-upload-1">
-          Add document to this query (Optional)
+          Upload documents (optional)
         </label>
+        <div class="govuk-hint">
+          Only upload documents related to your message. <br> To upload documents to progress your claim, use the
+          appropriate upload options.
+        </div>
         <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
       </div>
 

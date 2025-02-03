@@ -5,9 +5,17 @@ Question page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
-{{ govukBackLink({
-text: "Back",
-href: "javascript:window.history.back()"
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "010-11-dashboard-after-followup"
+    },
+    {
+      text: "Messages",
+      href: "#"
+    }
+  ]
 }) }}
 {% endblock %}
 
@@ -39,7 +47,7 @@ href: "javascript:window.history.back()"
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">
             <p class="govuk-body" style="margin-bottom: 5px;">
-            <a href="010-23-read-message-after-response.html" class="govuk-link govuk-link--no-visited-state">Help with documents</a>
+            <a href="010-23-read-message-after-response.html" class="govuk-link govuk-link--no-visited-state">Requesting an urgent update</a>
           </p></th>
           <td class="govuk-table__cell">04 Feb 2025, 11.59</td>
           <td class="govuk-table__cell">HMCTS staff</td>

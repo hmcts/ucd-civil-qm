@@ -193,7 +193,23 @@ Task list template – {{ serviceName }} – GOV.UK Prototype Kit
 
           </li>
 
-      
+          <li class="govuk-task-list__item govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-link--no-visited-state govuk-task-list__link" href="#"
+                aria-describedby="pay-hearing-hint pay-hearing-status">
+                Pay hearing fee
+              </a>
+              <div id="pay-hearing-hint" class="govuk-task-list__hint">
+                Deadline is 4pm on 04 Feb 2025
+              </div>
+            </div>
+            <div class="govuk-task-list__status" id="pay-hearing-status">
+              <strong class="govuk-tag govuk-tag--red">
+               Action needed
+              </strong>
+            </div>
+          </li>
+
           <li class="govuk-task-list__item govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
               <p class="govuk-body" style="margin-bottom: 0px;" aria-describedby="">
@@ -336,7 +352,13 @@ Task list template – {{ serviceName }} – GOV.UK Prototype Kit
       <p class="govuk-body" style="margin-bottom: 10px;">
         <a href="001-00-contact-the-court.html" class="govuk-link govuk-link--no-visited-state">Contact or apply to the court</a>
       </p>
-  
+      <p class="govuk-body" style="margin-bottom: 10px;">
+        <a href="#" class="govuk-link govuk-link--no-visited-state">Settle or discontinue a case</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom: 10px;">
+        <a href="#" class="govuk-link govuk-link--no-visited-state">Get debt respite (breathing space)</a>
+      </p>
+
       <!-- Help and support section -->
 
       <h2 class="govuk-heading-m">Help and support</h2>

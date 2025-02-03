@@ -36,7 +36,7 @@ Task list template – {{ serviceName }} – GOV.UK Prototype Kit
         <p class="govuk-body">You have received a response to the message you sent. </p>
 
         
-        <p class="govuk-body" style="margin-bottom: 0px;"><a class="govuk-notification-banner__link" href="#">View response</a>.</p>
+        <p class="govuk-body" style="margin-bottom: 0px;"><a class="govuk-notification-banner__link" href="010-22-query-list-after-response.html">View response</a>.</p>
 
         </p>
       </div>
@@ -209,7 +209,22 @@ Task list template – {{ serviceName }} – GOV.UK Prototype Kit
 
           </li>
 
-      
+          <li class="govuk-task-list__item govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-link--no-visited-state govuk-task-list__link" href="#"
+                aria-describedby="pay-hearing-hint pay-hearing-status">
+                Pay hearing fee
+              </a>
+              <div id="pay-hearing-hint" class="govuk-task-list__hint">
+                Deadline is 4pm on 04 Feb 2025
+              </div>
+            </div>
+            <div class="govuk-task-list__status" id="pay-hearing-status">
+              <strong class="govuk-tag govuk-tag--red">
+               Action needed
+              </strong>
+            </div>
+          </li>
 
           <li class="govuk-task-list__item govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
@@ -353,7 +368,12 @@ Task list template – {{ serviceName }} – GOV.UK Prototype Kit
       <p class="govuk-body" style="margin-bottom: 10px;">
         <a href="001-00-contact-the-court.html" class="govuk-link govuk-link--no-visited-state">Contact or apply to the court</a>
       </p>
-    
+      <p class="govuk-body" style="margin-bottom: 10px;">
+        <a href="#" class="govuk-link govuk-link--no-visited-state">Settle or discontinue a case</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom: 10px;">
+        <a href="#" class="govuk-link govuk-link--no-visited-state">Get debt respite (breathing space)</a>
+      </p>
 
       <!-- Help and support section -->
 
