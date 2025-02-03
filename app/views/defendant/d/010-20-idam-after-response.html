@@ -1,0 +1,82 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+text: "Back",
+href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+   
+  <h1 class="govuk-heading-l"> Your money claims account</h1>
+
+
+     
+  <h2 class="govuk-heading-m"> Claims made against you</h1>
+
+    <table class="govuk-table">
+      <p class="govuk-body"> To view or progress your case click on the claim number. Most recently created claaims are listed first.</p>
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header ">Claim number</th>
+          <th scope="col" class="govuk-table__header ">Claimant name</th>
+          <th scope="col" class="govuk-table__header ">Claim amount</th>
+          <th scope="col" class="govuk-table__header ">Actions</th>          
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">
+            <p class="govuk-body" style="margin-bottom: 5px;">
+      1234 1234 1234 1234
+          </p></th>
+          <td class="govuk-table__cell">Name Surname</td>
+          <td class="govuk-table__cell">£400</td>
+          <th scope="row" class="govuk-table__header">
+            <p class="govuk-body" style="margin-bottom: 5px;">
+            <a href="010-21-dashboard-after-response.html" class="govuk-link govuk-link--no-visited-state">Respond to application</a>
+          </p></th>
+        </tr>
+        
+
+
+        
+        
+
+      
+      
+        
+      </tbody>
+    </table>
+   
+
+   
+
+     
+
+
+      
+
+  </div>
+
+
+  </form>
+
+</div>
+</div>
+
+{% endblock %}
