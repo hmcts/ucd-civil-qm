@@ -1171,7 +1171,7 @@ router.post('/update-hearing--c', function(request, response) {
 
 
 // for d
-router.post('/update-hearing-d', function(request, response) {
+router.post('/update-hearing--d', function(request, response) {
 
     var contact = request.session.data['updateSend']
     if (contact == "01-change-date"){
