@@ -41,7 +41,8 @@ href: "javascript:window.history.back()"
     text: "The subject should be a summary of your message"
   },
   id: "query-subject",
-  name: "query-subject"
+  name: "query-subject",
+  value: "Unclear on the order I have been sent"
 }) }}
 
 
@@ -50,6 +51,7 @@ href: "javascript:window.history.back()"
 {{ govukTextarea({
   name: "query-details",
   id: "query-details",
+  value: "I have received an update on my account which says I have an order. However I am unclear what it means for my case - are you able to tell me what the order means?",
   label: {
     text: "Message detail",
     classes: "govuk-label--s"
@@ -98,7 +100,8 @@ href: "javascript:window.history.back()"
       },
       {
       value: "No",
-      text: "No"
+      text: "No",
+      checked: true
       }
       ]
       }) }}
@@ -127,10 +130,5 @@ href: "javascript:window.history.back()"
 
   </div>
 </div>
-
-
-<p class="govuk-body" style="margin-top: 200px;">
-  <a href="0000-raise-query-fill.html" class="govuk-link govuk-link--no-visited-state" >Fill this page in</a>
-</p>
 
 {% endblock %}
