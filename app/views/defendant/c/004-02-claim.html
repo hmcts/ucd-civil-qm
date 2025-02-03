@@ -1,0 +1,87 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+text: "Back",
+href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+    <span class="govuk-caption-l">Send documents to the court</span>
+    <h1 class="govuk-heading-l">Send claim evidence</h1>
+
+    <hr class="govuk-section-break govuk-section-break--m">
+
+
+
+
+    <p class="govuk-body">
+      To upload evidence to your case, select <a href="" class="govuk-link--no-visited-state" rel="noreferrer noopener"
+        target="_blank"> upload claim evidence </a>. </p>
+
+
+    <p class="govuk-body">
+      When you are saving the files, make sure the file names make it clear what the file is, for example:
+      yourname-evidencetype.doc.
+
+    </p>
+
+
+
+    <p class="govuk-body">
+      If you want to upload documents after the upload deadline, you need to<a href="001-01-gen-app-start.html"
+        class="govuk-link--no-visited-state"  target="_blank"> ask for more time to do what is
+        required by a court order</a>. </p>
+
+
+
+
+
+
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class="govuk-heading-m">Anything else</h2>
+    <p class="govuk-body">
+      If you still need help with your claim, you can send a message to the court.
+    </p>
+
+    <p class="govuk-body">
+      It takes at least 10 days for the court to respond to a message. </p>
+
+
+
+      <p class="govuk-body">
+        <a href="0000-raise-query.html" class="govuk-link govuk-link--no-visited-state">Send message</a>
+      </p>
+  
+      <hr class="govuk-section-break govuk-section-break--m">
+  
+  
+      <form action="000-dashboard" method="post" novalidate>
+  
+  
+        <button type="submit" class="govuk-button" data-module="govuk-button" style="display:block; margin-bottom: 20px;">
+          Close and return to case details
+        </button>
+  
+  
+  
+      </form>
+
+  </div>
+</div>
+
+{% endblock %}
