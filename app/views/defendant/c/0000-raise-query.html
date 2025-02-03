@@ -41,8 +41,7 @@ href: "javascript:window.history.back()"
     text: "The subject should be a summary of your message"
   },
   id: "query-subject",
-  name: "query-subject",
-  value: data['query-subject']
+  name: "query-subject"
 }) }}
 
 
@@ -51,7 +50,7 @@ href: "javascript:window.history.back()"
 {{ govukTextarea({
   name: "query-details",
   id: "query-details",
-  value: data['query-details'],
+
   label: {
     text: "Message detail",
     classes: "govuk-label--s"
@@ -130,4 +129,7 @@ href: "javascript:window.history.back()"
   </div>
 </div>
 
+<p class="govuk-body" style="margin-top: 200px;">
+  <a href="0000-raise-query-fill.html" class="govuk-link govuk-link--no-visited-state" >Fill this page in</a>
+</p>
 {% endblock %}
