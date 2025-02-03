@@ -1,0 +1,74 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-summary-card">
+  <div class="govuk-summary-card__title-wrapper">
+    <h2 class="govuk-summary-card__title">
+     New email
+    </h2>
+  </div>
+  <div class="govuk-summary-card__content">
+    <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" style=" width: 80px; ">
+          From:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          HM Courts & Tribunals Service Civil Claims
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" style=" width: 80px; ">
+          To:
+        </dt>
+        <dd class="govuk-summary-list__value">
+         You
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" style=" width: 80px; ">
+          Subject:
+        </dt>
+        <dd class="govuk-summary-list__value">
+         You have sent a message to the court
+        </dd>
+      </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt  style=" width: 900px; margin-top: 30px; margin-bottom: 30px;">
+          There is an update on this claim. Find more details in the case summary at: https://www.moneyclaims.service.gov.uk/
+        </dt>
+        <dt  style=" width: 900px; margin-top: 30px; margin-bottom: 30px;">
+          Online Civil Claims team <br>
+HM Courts and Tribunals Service
+        </dt>
+        <dd class="govuk-summary-list__value">
+        
+        </dd>
+      </div> 
+      
+     
+      
+    </dl>
+  </div>
+</div>
+
+<a href="010-00-dashboard-after-query.html" class="govuk-link govuk-link--no-visited-state"  rel="noreferrer noopener" target="_blank" >Back to dashboard</a>
+
+
+
+
+{% endblock %}
