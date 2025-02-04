@@ -1,0 +1,131 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "001-17-dashboard-after-gen-app-change"
+    },
+    {
+      text: "My applications",
+      href: "#"
+    }
+  ]
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-heading-l"> All applications</h1>
+
+
+
+
+
+    <table class="govuk-table">
+      <p class="govuk-body"> An application is a request for a change to the case.</p>
+      <p class="govuk-body"> These are the applications that have been made by you or the other parties. The 'other
+        parties' are the other side or sides involved in your claim. </p>
+      <p class="govuk-body"> The status of an application will change as it progresses. An application with a ‘To do’
+        status means you need to take action. For example, paying an application fee or responding.</p>
+
+
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header ">Application </th>
+          <th scope="col" class="govuk-table__header "></th>
+          <th scope="col" class="govuk-table__header ">Status</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">
+            <p class="govuk-body" style="margin-bottom: 5px;">
+             
+              {{ govukSummaryList({
+                classes: "govuk-summary-list--no-border",
+                rows: [
+                  {
+                    key: {
+                      text: "Status"
+                    },
+                    value: {
+                      text: "Application submitted - awaiting judicial decision"
+                    }
+                  },
+                  {
+                    key: {
+                      text: "Application type"
+                    },
+                    value: {
+                      text: "Change a hearing date"
+                    }
+                  },
+                  {
+                    key: {
+                      text: "Application ID"
+                    },
+                    value: {
+                      html: "1646-3255-6281-9689"
+                    }
+                  },
+                  {
+                    key: {
+                      text: "Submitted on"
+                    },
+                    value: {
+                      html: '<p class="govuk-body">04 Feb 2024, 11.13</p>'
+                    }
+                  }
+                ]
+              }) }}
+            </p>
+          </th>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+            In progress
+          </strong></td>
+        
+        </tr>
+
+
+
+
+
+
+
+
+
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  </form>
+
+</div>
+</div>
+
+{% endblock %}
