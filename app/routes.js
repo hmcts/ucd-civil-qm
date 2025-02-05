@@ -526,7 +526,7 @@ router.post('/solve-problems-d', function(request, response) {
     }   
 })
 
-// MANAGE HEARING DETAILS - WHAT DO YOU NEED TO DO?
+// Manage your hearing - WHAT DO YOU NEED TO DO?
 
 // for a 
 router.post('/update-hearing', function(request, response) {
@@ -1121,7 +1121,7 @@ router.post('/solve-problems--d', function(request, response) {
     }   
 })
 
-// MANAGE HEARING DETAILS - WHAT DO YOU NEED TO DO?
+// Manage your hearing - WHAT DO YOU NEED TO DO?
 
 // for a 
 router.post('/update-hearing--a', function(request, response) {
